@@ -48,61 +48,21 @@ loadLeaderboard(); loadSchedule(); loadGallery(); loadTicker();
 // simple auto-refresh every 20s (for live edits)
 setInterval(()=>{loadLeaderboard();loadSchedule();loadGallery();loadTicker()},20000);
 ```
+document.addEventListener('DOMContentLoaded', () => {
+    loadLeaderboard();
+    loadSchedule();
+    loadGallery();
+    loadTicker();
+    setInterval(() => {
+        loadLeaderboard();
+        loadSchedule();
+        loadGallery();
+        loadTicker();
+    }, 20000);
+});
+
+
+
 
 ---
 
-## leaderboard.json (example)
-
-```json
-{
-  "techlage": [
-    { "house": "Hercules", "points": 85 },
-    { "house": "Caesar", "points": 78 },
-    { "house": "Poseidon", "points": 72 },
-    { "house": "Phoenix", "points": 65 }
-  ],
-  "annual": [
-    { "house": "Caesar", "points": 225 },
-    { "house": "Hercules", "points": 215 },
-    { "house": "Phoenix", "points": 210 },
-    { "house": "Poseidon", "points": 205 }
-  ]
-}
-```
-
----
-
-## schedule.json (example)
-
-```json
-[
-  { "event": "Meme Court", "time": "09:00 AM", "location": "Hall A", "status": "Live Now" },
-  { "event": "Knowledge Grid", "time": "11:00 AM", "location": "Lab 1", "status": "Upcoming" },
-  { "event": "Innovation Fish Tank", "time": "01:00 PM", "location": "Hall B", "status": "Upcoming" },
-  { "event": "Escape Room", "time": "03:00 PM", "location": "Room 5", "status": "Upcoming" }
-]
-```
-
----
-
-## gallery.json (example)
-
-```json
-[
-  "images/photo1.jpg",
-  "images/photo2.jpg",
-  "images/photo3.jpg"
-]
-```
-
----
-
-## ticker.json (optional quick announcements)
-
-```json
-[
-  "Phoenix wins Innovation Breakthrough (+5)",
-  "Meme Court finals starting in Hall A",
-  "Vote now for Crowd Favourite via the main page"
-]
-```
