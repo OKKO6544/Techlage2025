@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>TechLage 2025 — Digital Republic</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
   <header class="site-header">
@@ -15,79 +14,62 @@
     </div>
   </header>
 
-  <nav class="main-nav">
-    <a href="#home" data-link>Home</a>
-    <a href="#leaderboard" data-link>Leaderboard</a>
-    <a href="#schedule" data-link>Schedule</a>
-    <a href="#voting" data-link>Voting</a>
-    <a href="#gallery" data-link>Gallery</a>
-  </nav>
-
   <main class="wrap">
-    <section id="home" class="panel">
-      <h2>Welcome to the Digital Republic</h2>
-      <p>Four houses. Many ministries. Every contest matters for the TechLage crown and the Annual House Cup.</p>
-      <div id="ticker" class="ticker">Loading announcements...</div>
-    </section>
-
+    <!-- Scoreboard -->
     <section id="leaderboard" class="panel">
       <h2>🏆 TechLage Scoreboard</h2>
       <div class="board-grid">
         <div class="board">
           <h3>TechLage Scores</h3>
-          <table class="score-table" aria-describedby="techlage-caption">
-            <caption id="techlage-caption">Current TechLage standings (event-only)</caption>
-            <thead><tr><th>Rank</th><th>House</th><th>Points</th></tr></thead>
-            <tbody id="techlage-body"></tbody>
+          <table class="score-table">
+            <thead>
+              <tr><th>Rank</th><th>House</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Hercules</td><td>85</td></tr>
+              <tr><td>2</td><td>Caesar</td><td>78</td></tr>
+              <tr><td>3</td><td>Poseidon</td><td>72</td></tr>
+              <tr><td>4</td><td>Phoenix</td><td>65</td></tr>
+            </tbody>
           </table>
         </div>
         <div class="board">
           <h3>Annual House Cup</h3>
-          <table class="score-table" aria-describedby="annual-caption">
-            <caption id="annual-caption">Year-long House Cup standings</caption>
-            <thead><tr><th>Rank</th><th>House</th><th>Points</th></tr></thead>
-            <tbody id="annual-body"></tbody>
+          <table class="score-table">
+            <thead>
+              <tr><th>Rank</th><th>House</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Caesar</td><td>225</td></tr>
+              <tr><td>2</td><td>Hercules</td><td>215</td></tr>
+              <tr><td>3</td><td>Phoenix</td><td>210</td></tr>
+              <tr><td>4</td><td>Poseidon</td><td>205</td></tr>
+            </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <section id="schedule" class="panel">
-      <h2>📅 Event Schedule</h2>
-      <table class="schedule-table">
-        <thead><tr><th>Event</th><th>Time</th><th>Location</th><th>Status</th></tr></thead>
-        <tbody id="schedule-body"></tbody>
-      </table>
-    </section>
-
+    <!-- Crowd Favourite Voting -->
     <section id="voting" class="panel">
       <h2>🗳 Crowd Favourite Voting</h2>
-      <p>Use the live Google Form to vote for Crowd Favourite performances. Results are embedded below.</p>
+      <p>Vote for your favourite performances below:</p>
       <div class="embed-wrap">
-        <!-- Replace the src with your Google Form embed link -->
-        <iframe id="vote-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXX/viewform?embedded=true" title="Crowd Vote" loading="lazy"></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXX/viewform?embedded=true"
+                title="Crowd Vote" loading="lazy"></iframe>
       </div>
       <h3>Live Results</h3>
       <div class="embed-wrap">
-        <!-- Replace the src with your published Google Sheets charts link if used -->
-        <iframe id="vote-results" src="https://docs.google.com/spreadsheets/d/e/2PACX-XXXXX/pubhtml?widget=true&amp;headers=false" title="Vote Results" loading="lazy"></iframe>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-XXXXX/pubhtml?widget=true&amp;headers=false"
+                title="Vote Results" loading="lazy"></iframe>
       </div>
     </section>
-
-    <section id="gallery" class="panel">
-      <h2>📸 Gallery</h2>
-      <div id="gallery-grid" class="gallery-grid">Gallery loading…</div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <small>Built for TechLage 2025 — Digital Republic. Edit the JSON files to update scores, schedule, and gallery. Host on GitHub Pages or any static host.</small>
+      <small>Built for TechLage 2025 — Digital Republic</small>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
