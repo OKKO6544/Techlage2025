@@ -1,4 +1,3 @@
-```json
 {
   "techlage": [
     { "house": "Hercules", "points": 85 },
@@ -12,4 +11,5 @@
     { "house": "Phoenix", "points": 210 },
     { "house": "Poseidon", "points": 205 }
   ]
+
 }
