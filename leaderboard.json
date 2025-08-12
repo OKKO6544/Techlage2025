@@ -1,0 +1,15 @@
+```json
+{
+  "techlage": [
+    { "house": "Hercules", "points": 85 },
+    { "house": "Caesar", "points": 78 },
+    { "house": "Poseidon", "points": 72 },
+    { "house": "Phoenix", "points": 65 }
+  ],
+  "annual": [
+    { "house": "Caesar", "points": 225 },
+    { "house": "Hercules", "points": 215 },
+    { "house": "Phoenix", "points": 210 },
+    { "house": "Poseidon", "points": 205 }
+  ]
+}
