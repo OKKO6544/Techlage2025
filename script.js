@@ -1,8 +1,15 @@
 ```javascript
 // Simple JSON-driven dynamic site for TechLage
 
-async function fetchJSON(path){
-  try{const r=await fetch(path+'?cachebust='+Date.now()); return await r.json()}catch(e){console.error('Fetch error',path,e);return null}
+async function fetchJSON(path) {
+  try {
+    const r = await fetch(path + '?cachebust=' + Date.now());
+    if (!r.ok) throw new Error(`HTTP ${r.status} ${r.statusText}`);
+    return await r.json();
+  } catch (e) {
+    console.error('Fetch error', path, e);
+    return null;
+  }
 }
 
 function makeRow(rank,item){
@@ -65,4 +72,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 ---
+
 
