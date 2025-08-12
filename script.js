@@ -17,7 +17,7 @@ function makeRow(rank,item){
 }
 
 async function loadLeaderboard(){
-  const data = await fetchJSON('leaderboard.json');
+const data = await fetchJSON('./leaderboard.json');
   if(!data) return;
   const tech = data.techlage || [];
   const ann = data.annual || [];
@@ -72,5 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 ---
+
 
 
