@@ -1,0 +1,6 @@
+[
+  { "event": "Meme Court", "time": "09:00 AM", "location": "Hall A", "status": "Live Now" },
+  { "event": "Knowledge Grid", "time": "11:00 AM", "location": "Lab 1", "status": "Upcoming" },
+  { "event": "Innovation Fish Tank", "time": "01:00 PM", "location": "Hall B", "status": "Upcoming" },
+  { "event": "Escape Room", "time": "03:00 PM", "location": "Room 5", "status": "Upcoming" }
+]
